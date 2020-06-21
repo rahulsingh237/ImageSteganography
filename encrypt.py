@@ -5,9 +5,9 @@ import os
 import csv
 import numpy as np
 
-def data(hashkey,text):
-    file = open('data.csv','r',newline='')
-    row = (hashkey,text)
+def data(hashkey,length):
+    file = open('data.csv','w',newline='')
+    row = (hashkey,length)
     writer = csv.writer(file)
     writer.writerow(row)
     file.close()
